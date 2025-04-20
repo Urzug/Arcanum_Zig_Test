@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\kaare\Downloads\tig-main(2)\CMakeProjectTIG\CMakeProjectTIG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\kaare\Downloads\tig-main(2)\CMakeProjectTIG\CMakeProjectTIG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kaare\Downloads\tig-main(2)\CMakeProjectTIG\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2A868EC5-96F3-3578-98B1-6159DE1CA4F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8B62B8C1-1311-3A46-A7A1-3EAC358EF1D3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

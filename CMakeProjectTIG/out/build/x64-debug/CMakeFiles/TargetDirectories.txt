@@ -1,0 +1,3 @@
+C:/Users/kaare/Downloads/tig-main(2)/CMakeProjectTIG/out/build/x64-debug/CMakeFiles/CMakeProjectTIG.dir
+C:/Users/kaare/Downloads/tig-main(2)/CMakeProjectTIG/out/build/x64-debug/CMakeFiles/ALL_BUILD.dir
+C:/Users/kaare/Downloads/tig-main(2)/CMakeProjectTIG/out/build/x64-debug/CMakeFiles/ZERO_CHECK.dir

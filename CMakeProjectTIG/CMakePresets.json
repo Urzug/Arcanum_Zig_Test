@@ -1,0 +1,68 @@
+﻿{
+  "version": 2,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 13,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "windows-base",
+      "hidden": true,
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "cl.exe",
+        "CMAKE_CXX_COMPILER": "cl.exe"
+      }
+    },
+    {
+      "name": "x86-Debug",
+      "displayName": "x86 Debug",
+      "inherits": "windows-base",
+      "description": "Debug build (x86, MSVC)",
+      "architecture": "x86",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_FLAGS_DEBUG": "/Zi /Od /Ob0 /Gy-",
+        "CMAKE_EXE_LINKER_FLAGS_DEBUG": "/DEBUG /PDB:CMakeProjectTIG.pdb /OPT:NOREF /OPT:NOICF /INCREMENTAL:NO"
+      }
+    },
+    {
+      "name": "x86-Release",
+      "displayName": "x86 Release",
+      "inherits": "windows-base",
+      "description": "Release build (x86, MSVC)",
+      "architecture": "x86",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_C_FLAGS_RELEASE": "/Zi",
+        "CMAKE_EXE_LINKER_FLAGS_RELEASE": "/DEBUG /PDB:CMakeProjectTIG.pdb /OPT:NOREF /OPT:NOICF /INCREMENTAL:NO"
+      }
+    },
+    {
+      "name": "x64-Debug",
+      "displayName": "x64 Debug",
+      "inherits": "windows-base",
+      "description": "Debug build (x64, MSVC)",
+      "architecture": "x64",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_FLAGS_DEBUG": "/Zi /Od /Ob0 /Gy-",
+        "CMAKE_EXE_LINKER_FLAGS_DEBUG": "/DEBUG /PDB:CMakeProjectTIG.pdb /OPT:NOREF /OPT:NOICF /INCREMENTAL:NO"
+      }
+    },
+    {
+      "name": "x64-Release",
+      "displayName": "x64 Release",
+      "inherits": "windows-base",
+      "description": "Release build (x64, MSVC)",
+      "architecture": "x64",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_C_FLAGS_RELEASE": "/Zi",
+        "CMAKE_EXE_LINKER_FLAGS_RELEASE": "/DEBUG /PDB:CMakeProjectTIG.pdb /OPT:NOREF /OPT:NOICF /INCREMENTAL:NO"
+      }
+    }
+  ]
+}
